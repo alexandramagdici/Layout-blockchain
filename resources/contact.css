@@ -168,4 +168,6 @@ p:last-child {
 footer {
   display: flex;
   flex-direction: column;
+  /* atat mai trebuia adaugat aici */
+  align-items: center;
 }

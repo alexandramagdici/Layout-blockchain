@@ -37,45 +37,7 @@
             </h2>
         </div>
     </div>
-    <div class="form-wrapper">
-        <form>
-            <label for="fname">First name</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
-            <label for="lname">Last name</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
-            <input type="text" readonly class="line"><br><br>
-            <label for="message">Message</label><br>
-            <textarea name="message"></textarea><br>
-            <div class="submit">
-                <button>Submit</button>
-                <!-- acestea semantic, nu sunt paragrafe, primul e doar un chunk de text, iar enter, structural ar fi ok sa fie un link -->
-                <p>or press</p>
-                <p>enter</p> <!--just to emphase the last word-->
-    <header class="bg-wrapper">
-            <div class="menu">
-                <ul>
-                    <button class="signup">Sign up</button>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="services.html">Services </a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="community.html">Community</a></li>
-                </ul>
-            </div>
-            <div class="logo-wrapper">
-                <img src="../Layout-blockchain/assets/logo.png">
-            </div>
-            <div class="text-wrapper">
-                <h1>
-                    <div>Contact us</div>            
-                </h1>
-                <h2>
-                    <div class="line"></div>
-                    <div>Fill out the form below to learn more.</div>
-                </h2>
-            </div>
-    </header>
+
     <main>
         <div class="form-wrapper">
             <form>
@@ -93,6 +55,7 @@
                     <div class="input-wrapper">
                         <i class="fas fa-envelope"></i>
                         <!--oare ar fi valid de exemplu pattern=".+@+.+.com" ?-->
+                        <!-- vrem o verificare mai complexa decat atat sa mergem spre o mai mare probabilitate de a primi un email corect -->
                         <input type="email" required id="email" name="email" placeholder="Enter your email"><br><br>
                     </div>
                 <input type="text" readonly class="line"><br>
@@ -100,6 +63,7 @@
                 <textarea required minlength="50" maxlength="250" name="message"></textarea><br>
                     <div class="submit">
                         <button>Submit</button>
+                        <!-- acestea semantic, nu sunt paragrafe, primul e doar un chunk de text, iar enter, structural ar fi ok sa fie un link -->
                         <p>or press</p>
                         <p>enter</p> <!--just to emphase the last word-->
                     </div>

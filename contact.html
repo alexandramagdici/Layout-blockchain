@@ -7,6 +7,7 @@
     <meta name="author" content="Alexandra Magdici">
 
     <title>Layout-blockhain</title>
+    <script src="https://kit.fontawesome.com/ce61d35a0f.js" crossorigin="anonymous"></script>
     <!--<link rel="stylesheet" type="text/css" href="resources/main.css">-->
     <link rel="stylesheet" type="text/css" href="resources/contact.css">
 </head>
@@ -52,14 +53,64 @@
                 <!-- acestea semantic, nu sunt paragrafe, primul e doar un chunk de text, iar enter, structural ar fi ok sa fie un link -->
                 <p>or press</p>
                 <p>enter</p> <!--just to emphase the last word-->
+    <header class="bg-wrapper">
+            <div class="menu">
+                <ul>
+                    <button class="signup">Sign up</button>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="services.html">Services </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
             </div>
-          </form>
-    </div>
+            <div class="logo-wrapper">
+                <img src="../Layout-blockchain/assets/logo.png">
+            </div>
+            <div class="text-wrapper">
+                <h1>
+                    <div>Contact us</div>            
+                </h1>
+                <h2>
+                    <div class="line"></div>
+                    <div>Fill out the form below to learn more.</div>
+                </h2>
+            </div>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form>
+                <label for="fname">First name</label><br>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user-alt"></i>
+                        <input type="text" required minlength="5" maxlength="30" id="fname" name="fname" placeholder="Enter your first name"><br>
+                    </div>
+                <label for="lname">Last name</label><br>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user-alt"></i>
+                        <input type="text" required min="5" maxlength="30" id="lname" name="lname" placeholder="Enter your last name"><br>
+                    </div>
+                <label for="email">Email</label><br>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <!--oare ar fi valid de exemplu pattern=".+@+.+.com" ?-->
+                        <input type="email" required id="email" name="email" placeholder="Enter your email"><br><br>
+                    </div>
+                <input type="text" readonly class="line"><br>
+                <label for="message">Message</label><br>
+                <textarea required minlength="50" maxlength="250" name="message"></textarea><br>
+                    <div class="submit">
+                        <button>Submit</button>
+                        <p>or press</p>
+                        <p>enter</p> <!--just to emphase the last word-->
+                    </div>
+            </form>
+        </div>
+    </main>
     <footer>
-        <div>
-            <!-- nici acestea semantic nu sunt paragrafe, trebuie sa consideram aspectele acestea -->
-            <p>Blockchain</p>
-            <p>Technology</p>
+        <div class="footer-mark"><!--am utilizat headings pt ca mi s-a parut ca e mai putin de stilizat asa-->
+            <!-- de obicei nu este cel mai bun motiv sa alegem niste tag-uri -->
+            <h3>Blockchain</h3>
+            <h4>Technology</h4>
         </div> 
     </footer>
 </body>
